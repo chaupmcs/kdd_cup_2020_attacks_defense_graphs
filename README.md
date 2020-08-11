@@ -1,4 +1,4 @@
-** KDDCup 2020 - Track 2 - Adversarial Attacks and Defense on Academic Graph**
+**KDDCup 2020 - Track 2 - Adversarial Attacks and Defense on Academic Graph**
 
 https://www.biendata.xyz/competition/kddcup_2020_formal/
 

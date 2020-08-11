@@ -10,6 +10,9 @@ The organizers will match all attackers and defenders from all teams and rank th
 
 **Final result: 7th**
 
+--------------------
+
+
 **REFERENCES**
 
 **Some Relevant Papers**

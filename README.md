@@ -1,5 +1,6 @@
 **Adversarial Attacks and Defense on Academic Graph**
-Link: https://www.biendata.xyz/competition/kddcup_2020_formal/
+
+https://www.biendata.xyz/competition/kddcup_2020_formal/
 
 The challenge: Submit a modified version of the original dataset as a form of attack that should look similar to the original graph, 
 but has lower classification accuracy significantly. All teams are required to submit an attacker and a defender (i.e., a robust Graph Neural Network model). 

@@ -1,0 +1,30 @@
+path: '/Users/chaupham/PycharmProjects/KDD_attack_defense/'
+seed: 42
+phase: 'phase_2'  ## {'phase_1', 'phase_2'}
+train_valid_test_folder: "train_valid_test_2020_0.2_0.1_50k"
+train_size: 0.2
+valid_size: 0.1
+test_size: 0.082023
+use_cuda: False
+graphSAGE: {
+  batch_size: 64,
+  num_samples: [12, 12],
+  layer_sizes: [64, 32],
+  bias: True,
+  dropout: 0.25,
+  lr: 0.002,
+  n_epochs: 1,
+  verbose: 1,
+}
+GCN: {
+  seed: 2020,
+  num_hidden: 64,
+  lr: 0.002,
+  num_classes: 18,
+  dropout: 0.2,
+  weight_decay: 0.0005,
+  n_epochs: 1,
+  early_stopping: 100,
+  verbose: 10,
+  normalize: "normalize_adj_gcn"  # {"normalize_adj_gcn", "normalize_adj_baseline", "no_norm"}
+}

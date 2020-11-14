@@ -11,6 +11,11 @@ The organizers will match all attackers and defenders from all teams and rank th
 
 --------------------
 
+**Updates: Some notes on the solution of the winning team - SPEIT (#1): https://www.bilibili.com/s/video/BV1UZ4y1M7uA**
+  + **Attacker**: Attack the structure first, keep it unchanged, then attack the features using gradient descent. *Multilayer internal connection* (i.e., Some fake nodes only connect to other fake nodes) is the most efficient strategy for structure attack. As for the loss function, [Carlini-Wagner](https://medium.com/@iambibek/explanation-of-the-carlini-wagner-c-w-attack-algorithm-to-generate-adversarial-examples-6c1db8669fa2) & *Cross Entropy* were used. GCN was employed as the surrogate model to attack.
+  + **Defender**: In the first step, the authors looked at the statistics to denoise outlier nodes (assign their features to 0). After that, they used normalization (`Arctan` function) to mitigate the effect of the attack. On top of that, they observed [TAGCN](https://arxiv.org/abs/1710.10370) outperformed both GCN and GraphSAGE in terms of accuracy and robustness. 
+
+--------------------
 
 **REFERENCES**
 
@@ -30,10 +35,6 @@ The organizers will match all attackers and defenders from all teams and rank th
 |HOW POWERFUL ARE GRAPH NEURAL NETWORKS? (2019)|graph_neural_network|https://arxiv.org/pdf/1810.00826.pdf
 |A Comprehensive Survey on Graph Neural Networks (2019)|graph_neural_network|https://arxiv.org/pdf/1901.00596.pdf
 
-
-**Updates: Some notes on the solution of the winning team - SPEIT (#1): https://www.bilibili.com/s/video/BV1UZ4y1M7uA**
-  + **Attacker**: Attack the structure first, keep it unchanged, then attack the features using gradient descent. *Multilayer internal connection* (i.e., Some fake nodes only connect to other fake nodes) is the most efficient strategy for structure attack. As for the loss function, [Carlini-Wagner](https://medium.com/@iambibek/explanation-of-the-carlini-wagner-c-w-attack-algorithm-to-generate-adversarial-examples-6c1db8669fa2) & *Cross Entropy* were used. GCN was employed as the surrogate model to attack.
-  + **Defender**: In the first step, the authors looked at the statistics to denoise outlier nodes (assign their features to 0). After that, they used normalization (`Arctan` function) to mitigate the effect of the attack. On top of that, they observed [TAGCN](https://arxiv.org/abs/1710.10370) outperformed both GCN and GraphSAGE in terms of accuracy and robustness. 
 
 **Other Resources**
 - https://github.com/yenchenlin/awesome-adversarial-machine-learning
